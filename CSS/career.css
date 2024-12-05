@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu ul li a.active,
+.menu ul li a:hover {
+  color: #007BFF;
+}
+
+.banner {
+  background: url('./Assets/banner-careers.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+.banner .overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px;
+}
+
+.culture {
+  padding: 50px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.culture-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.culture-boxes .box {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jobs {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.job-listings .job {
+  margin: 20px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.apply {
+  padding: 50px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.apply-btn {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
