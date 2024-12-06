@@ -1,11 +1,9 @@
-/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #1a1a1a;
+  color: white;
 }
 
 /* Header CSS */
@@ -14,7 +12,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--white);
+  background-color: black;
   z-index: 100;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -27,8 +25,9 @@ body {
   padding: 1rem;
 }
 .logo img {
-  height: 50px;
+  height: 75px;
   width: auto;
+  margin-left: 30px;
 }
 .menu ul {
   list-style: none;
@@ -43,7 +42,7 @@ body {
   transition: color 0.3s ease;
 }
 .menu ul li a:hover {
-  color: var(--primary-color);
+  background-color: #e65c00;
 }
 .button {
   background-color: #ff6600;
@@ -56,48 +55,177 @@ body {
   color: var(--white) !important;
 }
 
-/* Main Content Styles */
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-section h2 {
+/* styles.css */
+/* body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
-  border-bottom: 2px solid #333;
-  padding-bottom: 0.5rem;
+} */
+.about-section {
+  scroll-padding-top: 100px;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.about-header h6 {
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #888;
+  margin: 0 0 0.5rem;
+}
+.about-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #111;
+  margin: 0 0 1.5rem;
+}
+.about-content p {
+  font-size: 1.9rem;
+  margin: 1rem 0;
+  color: black;
 }
 
-section p, section ul {
+
+
+.directors-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: url('background.jpg') no-repeat center center/cover;
+}
+
+.directors-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.directors-section .description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.directors {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.director {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.director img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+}
+
+.director h3 {
+  font-size: 1.5rem;
+  margin: 10px 0 5px;
+}
+
+.director p {
+  font-size: 1rem;
+  margin: 5px 0 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #1da1f2; /* Twitter Blue */
+}
+
+
+/* Footer Style */
+.footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 3rem 1rem;
+}
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-left,
+.footer-right {
+  flex: 1 1 300px;
+}
+.footer-logo {
+  max-width: 200px;
+  height: auto;
+}
+.footer-left address {
+  margin: 1rem 0;
+  font-style: normal;
+}
+.footer-left address a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin: 1rem 0;
 }
-
-section ul {
-  list-style: none;
-  padding: 0;
+.newsletter-form input {
+  flex: 1 1 200px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
 }
-
-section ul li {
-  background: #fff;
-  margin: 0.5rem 0;
-  padding: 1rem;
-  border-left: 5px solid #333;
+.newsletter-form button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-
-section ul li strong {
-  color: #333;
+.newsletter-form button:hover {
+  background-color: #e65c00;
 }
-
-/* Footer Styles */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+.social-links {
+  margin: 1rem 0;
+}
+.social-links a {
+  color: var(--white);
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+.social-links a:hover {
+  color: var(--primary-color);
 }
