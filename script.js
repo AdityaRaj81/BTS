@@ -44,6 +44,9 @@ counters.forEach(counter => {
 });
 
 
+
+
+
 // contect.html -> script.js
 
 document.getElementById('contact-form').addEventListener('submit', function(e) {
