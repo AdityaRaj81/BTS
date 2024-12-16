@@ -99,7 +99,7 @@ body {
 }
 
 /* Mobile Menu (Hidden by Default) */
-@media (max-width: 768px) {
+@media (max-width: 200px) {
   .menu {
     position: absolute;
     top: 100%;
@@ -370,6 +370,7 @@ body {
 
 
 
+/* Container Flexbox */
 .collab-invite {
   display: flex;
   justify-content: space-between;
@@ -379,36 +380,49 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
 }
+
+/* Left Section */
 .left-section {
   flex: 1;
   margin-right: 20px;
 }
+
+/* Right Section */
 .right-section {
   flex: 1;
 }
+
+/* Typography and Elements */
 h1 {
   font-size: 28px;
   color: #d29d2e;
   margin-bottom: 20px;
 }
+
 p {
   margin-bottom: 15px;
 }
+
 .contact-details h3 {
   margin-top: 15px;
   font-size: 18px;
 }
+
 .contact-details a {
   color: #0073e6;
   text-decoration: none;
 }
+
 .contact-details a:hover {
   text-decoration: underline;
 }
+
 .form-group {
   margin-bottom: 15px;
 }
+
 .form-group input,
 .form-group textarea {
   width: 100%;
@@ -417,11 +431,13 @@ p {
   border-radius: 5px;
   font-size: 14px;
 }
+
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: #d29d2e;
   outline: none;
 }
+
 button {
   background-color: #d29d2e;
   color: white;
@@ -431,19 +447,24 @@ button {
   cursor: pointer;
   font-size: 14px;
 }
+
 button:hover {
   background-color: #bb8526;
 }
-.icon {
-  font-size: 20px;
-  margin-right: 10px;
-}
+
+/* Responsive Layout for Mobile */
 @media (max-width: 768px) {
-  .container {
-      flex-direction: column;
+  .collab-invite {
+    flex-direction: column; /* Stack sections vertically */
   }
-  .left-section, .right-section {
-      margin: 0;
+
+  .left-section {
+    margin-bottom: 20px; /* Add spacing between sections */
+    margin-right: 0; /* Remove margin-right for mobile */
+  }
+
+  .right-section {
+    margin-top: 10px;
   }
 }
 
