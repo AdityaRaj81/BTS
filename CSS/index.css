@@ -70,6 +70,8 @@ body {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  position: absolute;
+  right: 3rem;
 }
 .menu-toggle .bar {
   background-color: #333;
