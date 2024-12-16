@@ -1,3 +1,12 @@
+// JavaScript for Toggle Menu
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+});
+
+
 // Dynamic Text Rotator
 const dynamicText = document.getElementById('dynamic-text');
 const messages = [
