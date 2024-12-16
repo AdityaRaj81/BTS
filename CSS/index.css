@@ -118,7 +118,6 @@ body {
   overflow: hidden;
   margin-top: 70px;
 }
-
 .video-background {
   position: absolute;
   top: 50%;
@@ -130,7 +129,6 @@ body {
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
-
 .overlay {
   position: absolute;
   top: 50%;
@@ -142,17 +140,14 @@ body {
   width: 90%;
   max-width: 800px;
 }
-
 .static-text {
   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1em;
 }
-
 .dynamic-text {
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   animation: fade 3s infinite;
 }
-
 @keyframes fade {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
@@ -171,17 +166,14 @@ body {
   padding: 20px 40px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .counter-box {
   text-align: center;
 }
-
 .counter {
   font-size: 2rem;
   font-weight: bold;
   color: #d4a04c;
 }
-
 .counter-box p {
   font-size: 1rem;
   color: #333;
@@ -189,38 +181,76 @@ body {
 }
 */
 
-/* who we are section */
-
+/* Who We Are Section */
 .who-we-are {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0 auto;
+  padding: 50px 10%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  background-color: #fde5c1;
+  background: linear-gradient(135deg, #fde5c1, #ffedd9);
 }
 .content {
-  max-width: 80%;
-  text-align: justify;
+  max-width: 900px;
+  text-align: center; /* Center content on all screen sizes */
+  animation: fadeInUp 1s ease-out; /* Add subtle animation */
 }
+/* Section Title */
 .section-title {
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 18px;
   color: #003366;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
+/* Section Heading */
 .section-heading {
-  font-size: 32px;
-  font-weight: bold;
+  font-size: 28px;
+  font-weight: 700;
   color: #ff7300;
-  margin-bottom: 20px;
+  margin: 20px 0;
+  line-height: 1.4;
 }
+/* Section Description */
 .section-description {
-  font-size: 24px;
-  color: #555;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .who-we-are {
+    padding: 30px 5%;
+  }
+  .section-heading {
+    font-size: 24px;
+  }
+  .section-description {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 20px;
+  }
+  .section-description {
+    font-size: 14px;
+  }
+}
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Section Styling */
 .services-overview {
