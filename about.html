@@ -9,23 +9,33 @@
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header class="header">
-      <div class="container-header">
-        <div class="logo">
-          <a href="index.html"><img src="./Assets/Logo.png" alt="Logo"></a>
-        </div>
-        <nav class="menu" aria-label="Main navigation">
-          <ul>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="insights.html">Insights</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li><a href="contact.html" class="button">Let's Talk</a></li>
-          </ul>
-        </nav>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container-header">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="./Assets/Logo.png" alt="Logo">
+        </a>
       </div>
-    </header>
+      <!-- Hamburger Menu -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <!-- Navigation Menu -->
+      <nav class="menu">
+        <ul id="nav-list">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="career.html">Career</a></li>
+          <li><a href="contact.html" class="button">Let's Talk</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
     <section class="about-section">
       <header class="about-header">
@@ -110,6 +120,8 @@
           </div>
       </div>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>

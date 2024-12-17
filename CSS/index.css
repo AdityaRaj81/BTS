@@ -85,7 +85,6 @@ body {
   .menu-toggle {
     display: flex; /* Show Hamburger Menu */
   }
-
   .menu ul {
     display: none;
     flex-direction: column;
@@ -98,11 +97,9 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
   }
-
   .menu ul.active {
     display: flex; /* Show menu when active */
   }
-
   .menu ul li {
     margin: 10px 0;
   }
