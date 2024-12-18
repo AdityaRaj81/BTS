@@ -1,11 +1,3 @@
-// Toggle Mobile Menu
-const mobileMenu = document.getElementById('mobile-menu');
-const navList = document.getElementById('nav-list');
-
-mobileMenu.addEventListener('click', () => {
-  navList.classList.toggle('active');
-});
-
 
 // Dynamic Text Rotator
 const dynamicText = document.getElementById('dynamic-text');
@@ -29,28 +21,28 @@ function changeText() {
 }
 setInterval(changeText, 3000);
 
-// Counter Animation
-const counters = document.querySelectorAll('.counter');
+// // Counter Animation
+// const counters = document.querySelectorAll('.counter');
 
-counters.forEach(counter => {
-  counter.innerText = '0';
+// counters.forEach(counter => {
+//   counter.innerText = '0';
 
-  const updateCounter = () => {
-    const target = +counter.getAttribute('data-target');
-    const current = +counter.innerText;
+//   const updateCounter = () => {
+//     const target = +counter.getAttribute('data-target');
+//     const current = +counter.innerText;
 
-    const increment = target / 100;
+//     const increment = target / 100;
 
-    if (current < target) {
-      counter.innerText = Math.ceil(current + increment);
-      setTimeout(updateCounter, 20);
-    } else {
-      counter.innerText = target;
-    }
-  };
+//     if (current < target) {
+//       counter.innerText = Math.ceil(current + increment);
+//       setTimeout(updateCounter, 20);
+//     } else {
+//       counter.innerText = target;
+//     }
+//   };
 
-  updateCounter();
-});
+//   updateCounter();
+// });
 
 
 

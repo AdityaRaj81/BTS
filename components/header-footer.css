@@ -1,0 +1,226 @@
+/* Header Styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo img {
+  height: 75px;
+  width: auto;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.menu ul.active {
+  display: flex; /* Show menu when 'active' class is added */
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.menu-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.menu ul li a:hover {
+  color: #ff6600;
+}
+.button {
+  background-color: #ff6600;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #e65c00;
+}
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 3rem;
+}
+.menu-toggle .bar {
+  background-color: #333;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show Hamburger Menu */
+  }
+  .menu ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .menu ul.active {
+    display: flex; /* Show menu when active */
+  }
+  .menu ul li {
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+  background-color: #00263b;
+  color: white;
+  padding: 2rem 1rem;
+}
+.container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-left,
+.footer-right {
+  flex: 1 1 300px;
+}
+.footer-logo {
+  max-width: 150px; /* Reduced size for better proportionality */
+  height: auto;
+  border-radius: 25px;
+}
+.footer-left address {
+  margin: 1rem 0;
+  font-style: normal;
+}
+.footer-left address a {
+  color: #ff6600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-left address a:hover {
+  color: #e65c00;
+}
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.newsletter-form input {
+  flex: 1 1 calc(50% - 1rem); /* Two inputs in one row on desktop */
+  padding: 0.8rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+.newsletter-form input:focus {
+  outline: 2px solid #ff6600;
+  background-color: #f7f7f7;
+}
+.newsletter-form button {
+  flex: 1 1 100%; /* Full-width button on all devices */
+  background-color: #ff6600;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.newsletter-form button:hover {
+  background-color: #e65c00;
+}
+/* Social Links */
+.social-links {
+  margin: 1rem 0;
+}
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  transition: color 0.3s ease;
+}
+.social-links a:hover {
+  color: #ff6600;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container-footer {
+    flex-direction: column;
+  }
+  .footer-left,
+  .footer-right {
+    flex: 1 1 100%;
+    text-align: center; /* Center-align content on mobile */
+  }
+  .newsletter-form {
+    flex-direction: column; /* Stack inputs vertically on mobile */
+    gap: 0.8rem;
+  }
+  .newsletter-form input {
+    width: 90%; /* Full width for inputs on mobile */
+    font-size: 0.9rem; /* Adjust font size for better fit */
+  }
+  .newsletter-form button {
+    width: 95%; /* Full width for button on mobile */
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer-logo {
+    max-width: 200px; /* Further reduced size for very small devices */
+  }
+  .footer-left address {
+    font-size: 0.9rem;
+  }
+  .social-links a {
+    font-size: 0.9rem;
+  }
+}
+
