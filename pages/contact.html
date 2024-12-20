@@ -6,45 +6,69 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="../CSS/contact.css">
     <link rel="stylesheet" href="../components/header-footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header Placeholder -->
+    <div id="header"></div>
 
-  <!-- Header Placeholder -->
-  <div id="header"></div>
-
-<div class="contact_form_main" id="say_hi">
-    <div class="container">
-        <p>.</p>
-        <div class="contact_form_main_heading">Don't be shy</div>
-    </div>
-    <div class="contact_form_sub_heading">Say hi.</div>
-    <div class="container">
-        <p>If you would like to talk about how we can work with you, get in contact with us here.</p>
-        <br>
-        <p>We’d love to hear from you! Get in touch using the form below or contact us directly.</p>
-        <br>
-        <div class="contact-info">
-            <p><strong>Address:</strong> Millbank House, Lucan, Co. Dublin, Ireland</p>
-            <p><strong>Phone:</strong> +353 (01) 525 2544</p>
-            <p><strong>Email:</strong> info@legacycommunications.ie</p>
+    <div class="contact_form_main" id="say_hi">
+        <div class="container">
+            <p>.</p>
+            <div class="contact_form_main_heading">Don't be shy</div>
         </div>
+        <div class="contact_form_sub_heading">Say hi.</div>
+        <div class="container">
+            <p>If you would like to talk about how we can work with you, get in contact with us here.</p>
+            <br>
+            <p>We’d love to hear from you! Get in touch using the form below or contact us directly.</p>
+            <br>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Millbank House, Lucan, Co. Dublin, Ireland</p>
+                <p><strong>Phone:</strong> +353 (01) 525 2544</p>
+                <p><strong>Email:</strong> info@legacycommunications.ie</p>
+            </div>
 
-        <div class="container-form">
-            <form>
-                <input type="text" id="name" name="name" placeholder="Your name..">
-                <input type="email" id="email" name="email" placeholder="Your email..">
-                <input type="text" id="phone" name="phone" placeholder="Your phone..">
-                <textarea id="message" name="message" placeholder="Tell us more about how we can help" style="height:150px"></textarea>
-                <button type="submit">Contact Us 🔜</button>
-            </form>
+            <div class="container-form">
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your name.." required>
+                    <input type="email" id="email" name="email" placeholder="Your email.." required>
+                    <input type="text" id="phone" name="phone" placeholder="Your phone..">
+                    <textarea id="message" name="message" placeholder="Tell us more about how we can help" style="height:150px" required></textarea>
+                    <button type="submit">Contact Us 🔜</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-  <!-- Footer Placeholder -->
-  <div id="footer"></div>
+    <!-- Contact Info Section -->
+    <div class="contact-info-section">
+        <div class="contact-info-box">
+            <div class="icon">📞</div>
+            <h3>Phone Number</h3>
+            <p>9667791734</p>
+        </div>
+        <div class="contact-info-box">
+            <div class="icon">🏠</div>
+            <h3>Office Address</h3>
+            <p>Lower ground floor, NTR Memorial building, behind NTR Bhavan, Road Number 2, Banjara Hills, Hyderabad, Telangana, 500034</p>
+        </div>
+        <div class="contact-info-box">
+            <div class="icon">📧</div>
+            <h3>Email Address</h3>
+            <p>Careers@showtimeconsulting.in</p>
+        </div>
+    </div>
 
-<script src="../js/loadComponents.js"></script>
-<script src="../js/script.js"></script> 
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+
+    <script src="../js/loadComponents.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you shortly.');
+        });
+    </script>
 </body>
 </html>

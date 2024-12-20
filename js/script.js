@@ -48,12 +48,6 @@ setInterval(changeText, 3000);
 
 
 
-// contect.html -> script.js
-
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Thank you for your message! We will get back to you shortly.');
-});
 
 // services.html -> script.js
 
