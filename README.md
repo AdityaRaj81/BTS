@@ -1,5 +1,6 @@
 
-# **Behind The Success (BTS) Website** [![Netlify Status](https://api.netlify.com/api/v1/badges/eda5e766-aa68-4396-a812-90255ac41d7a/deploy-status)](https://app.netlify.com/sites/btsconsltant/deploys)
+# **Behind The Success (BTS) Website**
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eda5e766-aa68-4396-a812-90255ac41d7a/deploy-status)](https://app.netlify.com/sites/btsconsltant/deploys)
 
 
 ## **Author**  
