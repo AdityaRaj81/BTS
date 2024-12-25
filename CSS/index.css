@@ -120,8 +120,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 90%;
-  min-height: 50%;
+  min-width: 100%;
+  min-height: 100%;
   width: auto;
   height: auto;
   transform: translate(-50%, -50%);
@@ -132,7 +132,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--white);
+  color: lightblue;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   width: 90%;
@@ -185,7 +185,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #fde5c1, #ffedd9);
+  background: #B0B0B0;
 }
 .content {
   max-width: 900px;
@@ -196,7 +196,7 @@ body {
 .section-title {
   font-weight: 600;
   font-size: 20px;
-  color: #003366;
+  color: #8B0000;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
@@ -204,14 +204,14 @@ body {
 .section-heading {
   font-size: 30px;
   font-weight: 700;
-  color: #ff7300;
+  color: #8B0000;
   margin: 20px 0;
   line-height: 1.4;
 }
 /* Section Description */
 .section-description {
   font-size: 20px;
-  color: #444;
+  color: #002855;
   line-height: 1.8;
   margin-bottom: 20px;
   font-family: 'Arial', sans-serif;
