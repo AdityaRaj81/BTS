@@ -1,6 +1,6 @@
 /* Header Styles */
 .header {
-  background-color: #002855;
+  background-color: #008080;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -52,16 +52,16 @@
 
 .menu ul li a {
   text-decoration: none;
-  color: #FFD700;
+  color: #F5F5F5;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 .menu ul li a:hover {
-  color: #ff6600;
+  color: #50C878;
 }
 .button {
-  background-color: #FFD700;
-  color: #FFD700;
+  background-color: #708090;
+  color: #50C878;
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
@@ -76,7 +76,7 @@
   right: 3rem;
 }
 .menu-toggle .bar {
-  background-color: #333;
+  background-color: #FFD700;
   height: 3px;
   width: 25px;
   margin: 3px 0;
@@ -113,8 +113,8 @@
 
 /* Footer Styles */
 .footer {
-  background-color: #00263b;
-  color: white;
+  background-color: #008080;
+  color: #F5F5F5;
   padding: 2rem 1rem;
 }
 .container-footer {
@@ -138,12 +138,12 @@
   font-style: normal;
 }
 .footer-left address a {
-  color: #ff6600;
+  color: #F5F5F5;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .footer-left address a:hover {
-  color: #e65c00;
+  color: #50C878;
 }
 /* Newsletter Form */
 .newsletter-form {
@@ -181,13 +181,13 @@
   margin: 1rem 0;
 }
 .social-links a {
-  color: white;
+  color: #F5F5F5;
   text-decoration: none;
   margin-right: 1rem;
   transition: color 0.3s ease;
 }
 .social-links a:hover {
-  color: #ff6600;
+  color: #50C878;
 }
 
 /* Responsive Design */
