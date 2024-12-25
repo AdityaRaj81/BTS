@@ -195,14 +195,14 @@ body {
 /* Section Title */
 .section-title {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
   color: #003366;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 /* Section Heading */
 .section-heading {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: 700;
   color: #ff7300;
   margin: 20px 0;
@@ -210,7 +210,7 @@ body {
 }
 /* Section Description */
 .section-description {
-  font-size: 18px;
+  font-size: 20px;
   color: #444;
   line-height: 1.8;
   margin-bottom: 20px;

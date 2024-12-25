@@ -3,48 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - Replica</title>
+  <title>Our Services</title>
   <link rel="stylesheet" href="../CSS/services.css">
   <link rel="stylesheet" href="../components/header-footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+
 </head>
 <body>
 
   <!-- Header Placeholder -->
   <div id="header"></div>
 
-  <!-- Banner Section -->
-  <section class="banner">
-    <div class="overlay">
-      <h1>Our Services</h1>
-      <p>We bring ideas to life through innovative solutions.</p>
-    </div>
-  </section>
+  <header id="main-header">
+    <h1>.</h1>
+    <br>
+    <h1>Our Services</h1>
+    <p>Discover the solutions we offer to elevate your brand and drive success.</p>
+</header>
 
-  <!-- Services Section -->
-  <section class="services">
-    <div class="container">
-      <div class="service-box">
-        <img src="./Assets/service1.jpg" alt="Service 1">
-        <h3>Service Title 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel nisi lorem. Suspendisse potenti.</p>
-      </div>
-      <div class="service-box">
-        <img src="./Assets/service2.jpg" alt="Service 2">
-        <h3>Service Title 2</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel nisi lorem. Suspendisse potenti.</p>
-      </div>
-      <div class="service-box">
-        <img src="./Assets/service3.jpg" alt="Service 3">
-        <h3>Service Title 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel nisi lorem. Suspendisse potenti.</p>
-      </div>
+<section id="services-section">
+    <div class="service-card" data-reveal="right">
+        <div class="icon">📊</div>
+        <h3>Digital Marketing</h3>
+        <p>We create data-driven strategies that amplify your online presence, ensuring maximum growth and engagement for your brand.</p>
+        <p>Drive growth with targeted digital strategies. From SEO to PPC, we design campaigns that deliver measurable results and amplify your brand's online presence.</p>
     </div>
-  </section>
+    <div class="service-card" data-reveal="left">
+        <div class="icon">📱</div>
+        <h3>Social Media Strategy</h3>
+        <p>Our tailored strategies ensure your audience is engaged, connected, and growing across all social platforms.</p>
+        <p>Engage your audience with a tailored approach. Our social media plans build connections, increase visibility, and foster community engagement.</p>
+    </div>
+    <div class="service-card" data-reveal="right">
+        <div class="icon">✍️</div>
+        <h3>Content Marketing</h3>
+        <p>We craft impactful, relevant content that informs, inspires, and converts your audience into loyal customers.</p>
+        <p>Tell your brand’s story through engaging blogs, videos, and infographics. We create impactful content that resonates and converts.</p>
+    </div>
+    <div class="service-card" data-reveal="left">
+        <div class="icon">📣</div>
+        <h3>Digital PR</h3>
+        <p>Our team builds your online reputation with compelling storytelling and strategic outreach to ensure you stand out.</p>
+        <p>Enhance your online reputation with strategic media outreach. Our PR strategies bring positive visibility to your brand.</p>
+    </div>
+    <div class="service-card" data-reveal="right">
+        <div class="icon">🌟</div>
+        <h3>Influencer Marketing</h3>
+        <p>By collaborating with trusted voices, we boost your brand’s reach and authenticity, connecting you with key audiences.</p>
+        <p>Collaborate with trusted voices to reach wider audiences authentically. We connect your brand with influencers who align with your values.</p>
+    </div>
+    <div class="service-card" data-reveal="left">
+        <div class="icon">🎥</div>
+        <h3>Media Planning & Crisis Communication</h3>
+        <p>We secure strategic media placements and expertly manage critical situations to protect your brand's image.</p>
+        <p>Strategic media placements and proactive crisis management ensure your brand shines, even in challenging times.</p>
+    </div>
+    <div class="service-card" data-reveal="right">
+        <div class="icon">🖌️</div>
+        <h3>Branding & Advertisement</h3>
+        <p>From creative branding to impactful ad campaigns, we ensure your message resonates with the right audience.</p>
+        <p>Craft a brand identity that leaves a lasting impression. From logos to ad campaigns, we bring your vision to life.</p>
+    </div>
+    <div class="service-card" data-reveal="left">
+        <div class="icon">💻</div>
+        <h3>Website Management</h3>
+        <p>We optimize, maintain, and manage websites to deliver seamless user experiences and boost digital performance.</p>
+        <p>Optimize and maintain your website for speed, security, and a seamless user experience. We ensure your digital presence is always top-notch.</p>
+    </div>
+</section>
+
 
   <!-- Footer Placeholder -->
   <div id="footer"></div>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+
+
+  <script>    ScrollReveal().reveal('[data-reveal="left"]', {
+    origin: 'left',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease-out',
+    opacity: 0,
+  });
+
+  ScrollReveal().reveal('[data-reveal="right"]', {
+    origin: 'right',
+    distance: '50px',
+    duration: 1000,
+    easing: 'ease-out',
+    opacity: 0,
+  });
+      </script>
+
   <script src="../js/loadComponents.js"></script>
-  <script src="../js/script.js"></script>
+  <!-- <script src="../js/script.js"></script> -->
 </body>
 </html>

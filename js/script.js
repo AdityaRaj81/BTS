@@ -52,5 +52,6 @@ setInterval(changeText, 3000);
 // services.html -> script.js
 
 // Add any interactive functionality if needed here
-console.log("Services Page Loaded");
+console.log("ScrollReveal Initialized");
+
 
