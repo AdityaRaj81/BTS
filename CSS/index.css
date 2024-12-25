@@ -142,9 +142,11 @@ body {
   margin-bottom: 1em;
 }
 .dynamic-text {
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: bold;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   animation: fade 3s infinite;
-  color: black;
+  color:#1a1a1a
 }
 @keyframes fade {
   0%, 100% { opacity: 1; }
