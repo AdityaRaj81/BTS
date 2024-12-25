@@ -19,92 +19,6 @@ body {
 
 
 
-/* Header Styling */
-.header {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.logo img {
-  height: 50px;
-  width: auto;
-}
-/* Menu Styling */
-.menu ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-.menu ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-.menu ul li a:hover {
-  color: #ff6600;
-}
-.button {
-  background-color: #ff6600;
-  color: #fff !important;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-}
-.button:hover {
-  background-color: #e65c00;
-}
-/* Hamburger Menu */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  position: absolute;
-  right: 3rem;
-}
-.menu-toggle .bar {
-  background-color: #333;
-  height: 3px;
-  width: 25px;
-  margin: 3px 0;
-  transition: 0.3s;
-}
-/* Responsive Menu */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex; /* Show Hamburger Menu */
-  }
-  .menu ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-    padding: 1rem 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  .menu ul.active {
-    display: flex; /* Show menu when active */
-  }
-  .menu ul li {
-    margin: 10px 0;
-  }
-}
-
 
 
 /* Banner Section */
@@ -185,7 +99,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #B0B0B0;
+  background: #ADD8E6;
 }
 .content {
   max-width: 900px;
@@ -195,22 +109,23 @@ body {
 /* Section Title */
 .section-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 30px;
   color: #8B0000;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-}
-/* Section Heading */
-.section-heading {
-  font-size: 30px;
-  font-weight: 700;
-  color: #8B0000;
-  margin: 20px 0;
-  line-height: 1.4;
+  letter-spacing: 2px;
 }
 /* Section Description */
 .section-description {
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: 50000;
+  color: #002855;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+.section-last{
+  font-size: 24px;
+  font-weight: 50000;
   color: #002855;
   line-height: 1.8;
   margin-bottom: 20px;
@@ -253,6 +168,7 @@ body {
 .services-overview {
   padding: 2rem;
   text-align: center;
+  background-color: #708090;
 }
 .section-heading {
   font-size: 1.5rem;
@@ -286,7 +202,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .service-card:hover {
-  background-color: #fcb98c;
+  background-color: #ADD8E6;
   transform: translateY(-5px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
