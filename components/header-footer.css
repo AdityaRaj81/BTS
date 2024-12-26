@@ -114,11 +114,15 @@
 /* Footer Styles */
 #footer-content {
   background-color: #008080; /* Calm Teal */
+  color: #F5F5F5; /* Light text */
   font-family: 'Poppins', sans-serif;
+}
+.footer-content{
+  background-color: #008080;
 }
 .footer-container {
   max-width: 1200px;
-  /* background-color: #008080; */
+  background-color: #008080;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -127,6 +131,7 @@
   gap: 1.5rem;
 }
 .footer-logo img {
+  margin-top: 10%;
   height: 75px;
   width: auto;
   border-radius: 20px 0 15px 0;
@@ -147,8 +152,8 @@
 }
 .footer-bottom {
   margin-top: 1.5rem;
-  background-color: #006666; /* A darker teal */
-  color: #50C878;
+  background-color: #008080;
+  color: #FFFFFF;
   text-align: center;
   border-top: 1px solid #ffffff33;
   padding: 0.5rem;
