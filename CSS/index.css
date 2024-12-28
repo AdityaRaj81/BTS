@@ -8,7 +8,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -204,15 +203,15 @@ body {
 }
 /* Section Styling */
 .join-us-section {
-  background-color: #eaf4f4; /* Calm Teal */
-  color: #05386b; /* Blue */
+  background-color: #eaf4f4;
+  color: #05386b;
   text-align: center;
   padding: 3rem 1.5rem;
 }
 .join-us-content h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #029c9c; /* Teal for emphasis */
+  color: #029c9c;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -221,10 +220,10 @@ body {
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto 2rem auto;
-  color: #05386b; /* Blue */
+  color: #05386b;
 }
 .apply-button {
-  background-color: #029c9c; /* Teal */
+  background-color: #029c9c;
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -237,7 +236,7 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .apply-button:hover {
-  background-color: #026f6f; /* Darker Teal */
+  background-color: #026f6f;
   transform: translateY(-3px);
 }
 /* Responsive Design */
@@ -252,7 +251,7 @@ body {
 /* Section Styling */
 .contact-us-section {
   background-color: #ADD8E6;
-  color: #05386b; /* Blue */
+  color: #05386b;
   padding: 3rem 1.5rem;
 }
 .contact-container {
@@ -271,7 +270,7 @@ body {
   padding: 2rem;
 }
 .contact-form h2 {
-  color: #029c9c; /* Teal */
+  color: #029c9c;
   margin-bottom: 1.5rem;
 }
 .form-group {
@@ -281,7 +280,7 @@ body {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #05386b; /* Blue */
+  color: #05386b;
 }
 .form-group input,
 .form-group textarea {
@@ -295,7 +294,7 @@ body {
   resize: none;
 }
 .submit-button {
-  background-color: #029c9c; /* Teal */
+  background-color: #029c9c;
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -307,7 +306,7 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .submit-button:hover {
-  background-color: #026f6f; /* Darker Teal */
+  background-color: #026f6f;
   transform: translateY(-3px);
 }
 /* Company Details Styling */
@@ -319,7 +318,7 @@ body {
   
 }
 .company-detail-box {
-  background-color: #ffffff; /* White */
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: grid;
@@ -337,19 +336,19 @@ body {
 }
 .icon {
   flex-shrink: 0;
-  background-color: #05386b; /* Blue */
+  background-color: #05386b;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50px;
-  color: #ffffff; /* White */
+  color: #ffffff;
   font-size: 1rem;
 }
 .detail h3 {
   font-size: 1.1rem;
-  color: #05386b; /* Blue */
+  color: #05386b;
   margin-bottom: 0.5rem;
 }
 .detail p {
@@ -358,7 +357,7 @@ body {
 }
 .detail a {
   text-decoration: none;
-  color: #001f1f; /* Teal */
+  color: #001f1f;
 }
 .detail a:hover {
   text-decoration: underline;
